@@ -66,61 +66,83 @@
     background-color: #3E3E3E;
 }
 
-.logo {
-    width: 100px;
-    margin-bottom: 10px;
-  }
-  
-  .searchBar {
-    border-top: 2px solid rgb(125, 125, 125);
-    border-bottom: 2px solid rgb(125, 125, 125);
-    padding: 15px 0px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .sideBar {
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
-  
-  .recentPlayed {
-    border-top: 2px solid rgb(125, 125, 125);
-    border-bottom: 2px solid rgb(125, 125, 125);
-    padding: 15px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100vh - 400px);
-  }
-  
-  .recentTitle {
-    color: rgb(125, 125, 125);
-    font-size: 15px;
-    font-weight: 400;
-  }
-  
-  .install {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .contentWindow {
-    padding: 50px 0px;
-  }
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12%;
+}
 
-  .footer {
-    position: sticky;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    background-color: #292929;
-    color: rgb(205, 203, 203) !important; 
-  }
+.logo {
+  height: 80%;
+  aspect-ratio: 1;
+  /* margin-bottom: 10px; */
+}
+
+
+.Token-Container{
+  background-color: #080050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 2rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  /* aspect-ratio: 1; */
+}
+
+.searchBar {
+  border-top: 2px solid rgb(125, 125, 125);
+  border-bottom: 2px solid rgb(125, 125, 125);
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.sideBar {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.recentPlayed {
+  border-top: 2px solid rgb(125, 125, 125);
+  border-bottom: 2px solid rgb(125, 125, 125);
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 400px);
+}
+
+.recentTitle {
+  color: rgb(125, 125, 125);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.install {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentWindow {
+  padding: 50px 0px;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  background-color: #292929;
+  color: rgb(205, 203, 203) !important; 
+}
 
 
 

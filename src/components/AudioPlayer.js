@@ -5,6 +5,7 @@ import "./AudioPlayer.css";
 import { SoundOutlined, StepBackwardOutlined, StepForwardOutlined, PlayCircleFilled, PauseCircleFilled} from "@ant-design/icons";
 
 
+
 const Player = ({ url }) => {
   const {resolveLink} = useIPFS();
   const [
@@ -21,6 +22,13 @@ const Player = ({ url }) => {
   ] = useAudio(url);
 
   
+  function SetTokenData(tokens){
+    localStorage.setItem('CadenceToken', tokens)
+  }
+  
+
+  // var Duration = 4
+
   const minSec = (secs) => {
     const minutes = Math.floor(secs / 60);
     const returnMin = minutes < 10 ? `0${minutes}` : minutes;
@@ -29,6 +37,9 @@ const Player = ({ url }) => {
 
     return `${returnMin}:${returnSec}`;
   };
+
+  SetTokenData(localStorage.getItem('CadenceToken') - 0.0125)
+
 
   return (
     <>
