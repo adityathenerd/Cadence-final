@@ -1,0 +1,59 @@
+.header{
+    height: 30vh;
+    width: 100%;
+	/* border-radius: 0 0 200% 200%; */
+    /* border-bottom: 1px solid #000; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-family: 'Noto Sans', sans-serif;
+    flex-direction: column;
+}
+
+.header h1.heading{
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.header .header-content{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.content-section{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* height: ; */
+    /* margin: 1rem 0; */
+    padding: 0.8rem 2rem;
+}
+
+.content-section > img{
+    height: 250px;
+}
+
+.content-section > .content-section-text{
+    width: 50%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+}
+.content-section > .content-section-text > h1{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.content-section:nth-child(odd){
+    flex-direction: row;
+}
+.content-section:nth-child(even){
+    flex-direction: row-reverse;
+}
