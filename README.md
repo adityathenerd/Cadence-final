@@ -1,1 +1,1 @@
-#Decentralized Spotify Final Build
+Decentralised Music Streaming Platform with Time as a Currency
