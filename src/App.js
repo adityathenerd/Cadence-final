@@ -51,7 +51,7 @@ const App = () => {
               <img src={Spotify} alt="Logo" className="logo"></img>
               <FetchTokenData></FetchTokenData>
               <label class="switch size-m">
-                  <input type="checkbox" name="LCase" id=""/>
+                  <input type="checkbox" name="" id=""/>
                   <span class="slider round"></span>
               </label>
             </div>
