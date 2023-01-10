@@ -40,7 +40,9 @@ const App = () => {
   function SetTokenData(tokens){
     localStorage.setItem('CadenceToken', tokens)
   }
-  SetTokenData(200)
+  if (!localStorage.getItem('CadenceToken')){
+    SetTokenData(200)
+  }
   const [nftAlbum, setNftAlbum] = useState();
   return (
     <>
@@ -50,9 +52,9 @@ const App = () => {
             <div className='header-container'>
               <img src={Spotify} alt="Logo" className="logo"></img>
               <FetchTokenData></FetchTokenData>
-              <label class="switch size-m">
+              <label className="switch size-m">
                   <input type="checkbox" name="" id=""/>
-                  <span class="slider round"></span>
+                  <span className="slider round"></span>
               </label>
             </div>
             <div className="searchBar">
