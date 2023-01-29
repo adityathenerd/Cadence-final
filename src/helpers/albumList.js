@@ -11,11 +11,11 @@ export const library = [
       image:
       "https://is2-ssl.mzstatic.com/image/thumb/Music112/v4/cf/9f/07/cf9f07b0-9bab-97f4-af62-9d05c622bedd/cover.jpg/1200x1200bf-60.jpg",
     },
-    {
-      title: "The Unknown",
-      image:
-        "https://350927.smushcdn.com/1388247/wp-content/uploads/2020/11/Unknown-Album-Cover-PP1.jpg?lossy=0&strip=1&webp=1",
-    },
+    // {
+    //   title: "The Unknown",
+    //   image:
+    //     "https://350927.smushcdn.com/1388247/wp-content/uploads/2020/11/Unknown-Album-Cover-PP1.jpg?lossy=0&strip=1&webp=1",
+    // },
     {
       title: "Get Rich Or Die Tryin'",
       image: "https://m.media-amazon.com/images/I/61AYpcmBtpL._SY450_.jpg",
