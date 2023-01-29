@@ -1,4 +1,4 @@
-.albumContent {
+.ticketContent {
     padding: 10px 40px;
 }
 
@@ -7,15 +7,25 @@
     gap:30px;
 }
 
-.albumCover {
-    width:200px;
+.drop {
+    padding: 5rem;
+    width: 600px;
 }
 
-.albumDeets {
+.ticketCover {
+    width: 400px;
+}
+
+.ticketDeets {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     color: #32005a;
+}
+
+.seatCover{
+    width: 525px;
+    padding: 5rem;
 }
 
 .title {
@@ -29,7 +39,7 @@
     color:#32005a;
 }
 
-.playButton {
+.bookButton {
     padding: 10px;
     background-color: #731db9;
     width: 120px;
@@ -59,11 +69,7 @@
     transition: transform 0.4s;
 }
 
-.openLogo{
-    height:20px;
-}
-
-.playButton:hover {
+.bookButton:hover {
     cursor: pointer;
     transform: scale(1.05);;
 }
@@ -73,7 +79,7 @@
     transform: scale(1.05);
 }
 
-.joinButton{
+/* .joinButton{
     padding: 10px;
     background-color: transparent;
     width: 200px;
@@ -97,9 +103,9 @@
 .joinButton:hover{
     cursor: pointer;
     transform: scale(1.05);
-}
+} */
 
-.tableHeader {
+/* .tableHeader {
     border-bottom: 1px solid rgb(67, 67, 67);
     display: flex;
     color: rgb(125, 125, 125);
@@ -130,4 +136,4 @@
     font-weight: 500;
     padding-bottom: 13px;
     padding-top: 13px;
-}
+} */

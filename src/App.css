@@ -116,15 +116,33 @@
   letter-spacing: 1px;
 }
 
-.recentPlayed {
-  border-top: 2px solid rgb(125, 125, 125);
-  border-bottom: 2px solid rgb(125, 125, 125);
-  padding: 15px 0px;
+.connectButton{
+  padding: 10px;
+  background-color: white;
+  width: 150px;
+  color:white;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: calc(100vh - 400px);
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border: 2px solid white;
+  border-radius: 25px;
+  letter-spacing: 1.5px;
+  transition: transform 0.4s;
 }
+
+.connectLogo{
+  height: 46px;
+}
+
+.connectButton:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
 
 .recentTitle {
   color: rgb(125, 125, 125);
@@ -218,4 +236,16 @@ input:checked + .slider::before{
 
 .switch.size-m input:checked + .slider::before{
   transform: translateX(25px);
+}
+
+.Address-Container{
+  background-color: #04003e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 104%;
+  height: 2rem;
+  padding: 0 1.5rem;
+  border-radius: 20px;
+  font-size: 0.51rem;
 }

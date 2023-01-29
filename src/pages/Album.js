@@ -1,9 +1,14 @@
 import React from "react";
 import { useAlbum } from "../hooks/useAlbum";
 import { useLocation } from "react-router";
+
 import "./Album.css";
+
 import Opensea from "../images/opensea.png";
+import Discord from "../images/discord.png";
 import { ClockCircleOutlined } from "@ant-design/icons";
+
+
 
 const bears = 
     [
@@ -31,6 +36,20 @@ const bears =
       }
       
 ];
+
+// async function holdsToken(contractAddress) {
+//   const ERC721 = require()
+//   const provider = await web3Modal.connect() /* This example uses the web3Modal package */
+//   const web3 = new Web3(provider)
+//   const accounts = await web3.eth.getAccounts()
+//   const currentWallet = Web3.utils.toChecksumAddress(accounts[0])
+
+//   const contract = new web3.eth.Contract(ERC721.abi, contractAddress)
+
+//   const result = await contract.methods.balanceOf(currentWallet).call()
+
+//   return parseInt(result) && parseInt(result) > 0
+// }
 
 const Album = ({ setNftAlbum }) => {
   const { state: albumDetails } = useLocation();
@@ -72,6 +91,19 @@ const Album = ({ setNftAlbum }) => {
             OpenSea
             <img src={Opensea} className="openLogo" />
           </div>
+          <div
+            className="joinButton"
+            onClick={() =>
+
+              window.open(
+
+                `https://discord.gg/3xDZ6bSs`
+              )
+            }
+          >
+            Join Discord
+            <img src={Discord} className="joinLogo" />
+          </div>
         </div>
         <div className="tableHeader">
           <div className="numberHeader">#</div>
@@ -84,8 +116,7 @@ const Album = ({ setNftAlbum }) => {
           bears.map((nft, i) => {
             nft = JSON.parse(nft.metadata);
             return (
-              <>
-                <div className="tableContent">
+                <div className={`tableContent ${i}`} key={i}>
                   <div className="numberHeader">{i+1}</div>
                   <div
                     className="titleHeader"
@@ -95,7 +126,6 @@ const Album = ({ setNftAlbum }) => {
                   </div>
                   <div className="numberHeader">{nft.duration}</div>
                 </div>
-              </>
             );
           })}
       </div>
