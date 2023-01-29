@@ -4,7 +4,7 @@ import { Alchemy, Network } from "alchemy-sdk";
 
 import seat from "../images/area.png"
 import Select from "react-select";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import "./ticket.css";
 // import ERC721 from "./ERC721.json"
 // import Web3 from 'web3';

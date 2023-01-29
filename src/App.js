@@ -115,7 +115,7 @@ const App = () => {
             <div className='connectButton'
               onClick={connectWallet}
             >
-              <img src={Metamask} className="connectLogo"/>
+              <img src={Metamask} alt={'logo'} className="connectLogo"/>
             </div>
           </Sider>
 
@@ -138,6 +138,7 @@ const App = () => {
           />
           }
         </Footer>
+
 
       </Layout>
     </>
